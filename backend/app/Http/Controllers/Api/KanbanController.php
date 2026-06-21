@@ -13,7 +13,7 @@ class KanbanController extends Controller {
         $data = $r->validate(['title'=>'required|string|max:255']);
         $board = Board::create($data);
         foreach (['To Do','Doing','Done'] as $i=>$t) BoardList::create(['board_id'=>$board->id,'title'=>$t,'position'=>$i]);
-        return $board->load(['lists','members','tags']);
+        return $board->load(['lists.cards','members','tags']);
     }
     public function createList(Request $r, Board $board) {
         $data = $r->validate(['title'=>'required|string|max:255']);

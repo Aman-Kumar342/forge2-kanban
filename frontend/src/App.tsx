@@ -35,8 +35,9 @@ export default function App() {
 
   const createBoard = async () => {
     const b = await api('/boards', { method: 'POST', body: JSON.stringify({ title }) })
-    await load()
-    setBoard(b)
+    const data = await api('/boards')
+    setBoards(data)
+    setBoard(data.find((x: Board) => x.id === b.id) ?? null)
   }
 
   const addCard = async (listId: number) => {
@@ -119,7 +120,7 @@ export default function App() {
           {board.lists.map(list => (
             <div key={list.id} className="list">
               <h3>{list.title}</h3>
-              {list.cards.map(card => (
+              {(list.cards ?? []).map(card => (
                 <div key={card.id} className={`card ${isOverdue(card.due_date)?'overdue':''}`}>
                   <strong>{card.title}</strong>
                   {card.description && <p>{card.description}</p>}
