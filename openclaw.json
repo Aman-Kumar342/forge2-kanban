@@ -1,0 +1,224 @@
+{
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "REDACTED"
+    },
+    "mode": "local",
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "controlUi": {
+      "allowInsecureAuth": true
+    }
+  },
+  "skills": {
+    "entries": {
+      "1password": {
+        "enabled": false
+      },
+      "blogwatcher": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "clawhub": {
+        "enabled": false
+      },
+      "coding-agent": {
+        "enabled": false
+      },
+      "discord": {
+        "enabled": false
+      },
+      "eightctl": {
+        "enabled": false
+      },
+      "gemini": {
+        "enabled": false
+      },
+      "gh-issues": {
+        "enabled": false
+      },
+      "gifgrep": {
+        "enabled": false
+      },
+      "github": {
+        "enabled": false
+      },
+      "gog": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "mcporter": {
+        "enabled": false
+      },
+      "nano-pdf": {
+        "enabled": false
+      },
+      "obsidian": {
+        "enabled": false
+      },
+      "openai-whisper": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "sag": {
+        "enabled": false
+      },
+      "session-logs": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "slack": {
+        "enabled": false
+      },
+      "songsee": {
+        "enabled": false
+      },
+      "sonoscli": {
+        "enabled": false
+      },
+      "spotify-player": {
+        "enabled": false
+      },
+      "summarize": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      },
+      "video-frames": {
+        "enabled": false
+      },
+      "voice-call": {
+        "enabled": false
+      },
+      "wacli": {
+        "enabled": false
+      },
+      "xurl": {
+        "enabled": false
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-06-21T08:06:01.576Z",
+    "lastRunVersion": "2026.6.9",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.6.9",
+    "lastTouchedAt": "2026-06-21T11:32:12.681Z"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/home/aman/forge2",
+      "models": {
+        "google/gemini-2.5-flash": {},
+        "groq/openai/gpt-oss-120b": {},
+        "groq/llama-3.3-70b-versatile": {},
+        "groq/openai/gpt-oss-20b": {},
+        "ollama/qwen2.5-coder:7b": {}
+      },
+      "model": {
+        "primary": "ollama/qwen2.5-coder:7b"
+      },
+      "memorySearch": {
+        "enabled": false
+      },
+      "thinkingDefault": "off"
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding",
+    "allow": [
+      "message",
+      "read",
+      "write",
+      "apply_patch",
+      "exec",
+      "process"
+    ]
+  },
+  "plugins": {
+    "entries": {
+      "slack": {
+        "enabled": true
+      },
+      "google": {
+        "enabled": true
+      },
+      "groq": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "slack": {
+      "enabled": true,
+      "botToken": "REDACTED",
+      "appToken": "REDACTED",
+      "groupPolicy": "open",
+      "channels": {
+        "C0BBL75J5AB": {
+          "enabled": true
+        },
+        "C0BBVAUNJSF": {
+          "enabled": true
+        },
+        "C0BC3GR325P": {
+          "enabled": false
+        }
+      },
+      "capabilities": {
+        "interactiveReplies": true
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "REDACTED"
+      }
+    }
+  }
+}
