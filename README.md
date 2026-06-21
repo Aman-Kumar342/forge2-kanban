@@ -8,7 +8,7 @@ https://forge2.69.62.76.226.sslip.io
 
 ## Demo Video
 
-> **TODO:** Add your 60–90 second screen recording link here after upload.
+> **TODO:** 
 > See `SCORE_100_PLAN.md` for what to record.
 
 ## Score Plan
